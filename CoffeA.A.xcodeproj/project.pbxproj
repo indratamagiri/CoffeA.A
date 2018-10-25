@@ -13,6 +13,7 @@
 		47300BD92180CF7400EB49F0 /* Product+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47300BD72180CF7400EB49F0 /* Product+CoreDataClass.swift */; };
 		47300BDA2180CF7400EB49F0 /* Product+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47300BD82180CF7400EB49F0 /* Product+CoreDataProperties.swift */; };
 		47300BDC2180E86900EB49F0 /* HomeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47300BDB2180E86900EB49F0 /* HomeViewCell.swift */; };
+		4732BB6921816DCD000B1AE0 /* Coffe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4732BB6821816DCD000B1AE0 /* Coffe.swift */; };
 		47D1CCE1217F9B39007EDD5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D1CCE0217F9B39007EDD5A /* AppDelegate.swift */; };
 		47D1CCE3217F9B39007EDD5A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D1CCE2217F9B39007EDD5A /* ViewController.swift */; };
 		47D1CCE6217F9B39007EDD5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47D1CCE4217F9B39007EDD5A /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 		47D1CCF9217F9B3B007EDD5A /* CoffeA_ATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D1CCF8217F9B3B007EDD5A /* CoffeA_ATests.swift */; };
 		47D1CD04217F9B3B007EDD5A /* CoffeA_AUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D1CD03217F9B3B007EDD5A /* CoffeA_AUITests.swift */; };
 		47D1CD12217F9CDE007EDD5A /* RegisController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D1CD11217F9CDE007EDD5A /* RegisController.swift */; };
+		47E140DD2181B2A200415106 /* CheckOutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E140DC2181B2A200415106 /* CheckOutController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,7 @@
 		47300BD72180CF7400EB49F0 /* Product+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Product+CoreDataClass.swift"; sourceTree = "<group>"; };
 		47300BD82180CF7400EB49F0 /* Product+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Product+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		47300BDB2180E86900EB49F0 /* HomeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewCell.swift; sourceTree = "<group>"; };
+		4732BB6821816DCD000B1AE0 /* Coffe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coffe.swift; sourceTree = "<group>"; };
 		47D1CCDD217F9B39007EDD5A /* CoffeA.A.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeA.A.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47D1CCE0217F9B39007EDD5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47D1CCE2217F9B39007EDD5A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +66,7 @@
 		47D1CD03217F9B3B007EDD5A /* CoffeA_AUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeA_AUITests.swift; sourceTree = "<group>"; };
 		47D1CD05217F9B3B007EDD5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		47D1CD11217F9CDE007EDD5A /* RegisController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisController.swift; sourceTree = "<group>"; };
+		47E140DC2181B2A200415106 /* CheckOutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckOutController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,8 @@
 			children = (
 				47300BC92180B84100EB49F0 /* HomeControllerTableViewController.swift */,
 				47300BDB2180E86900EB49F0 /* HomeViewCell.swift */,
+				4732BB6821816DCD000B1AE0 /* Coffe.swift */,
+				47E140DC2181B2A200415106 /* CheckOutController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -288,6 +294,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4732BB6921816DCD000B1AE0 /* Coffe.swift in Sources */,
 				47D1CCE9217F9B39007EDD5A /* CoffeA_A.xcdatamodeld in Sources */,
 				47300BD22180C58E00EB49F0 /* Users+CoreDataProperties.swift in Sources */,
 				47D1CCE3217F9B39007EDD5A /* ViewController.swift in Sources */,
@@ -296,6 +303,7 @@
 				47D1CD12217F9CDE007EDD5A /* RegisController.swift in Sources */,
 				47D1CCE1217F9B39007EDD5A /* AppDelegate.swift in Sources */,
 				47300BDC2180E86900EB49F0 /* HomeViewCell.swift in Sources */,
+				47E140DD2181B2A200415106 /* CheckOutController.swift in Sources */,
 				47300BCA2180B84100EB49F0 /* HomeControllerTableViewController.swift in Sources */,
 				47300BDA2180CF7400EB49F0 /* Product+CoreDataProperties.swift in Sources */,
 			);

@@ -11,15 +11,12 @@ import UIKit
 class HomeControllerTableViewController: UITableViewController {
 
     
+    var dataCoffe = [Coffe]();
+    var coffe: Coffe?;
     
     override func viewDidLoad() {
         super.viewDidLoad()
         loadData();
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,24 +28,33 @@ class HomeControllerTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        print(dataCoffe.count)
+        return dataCoffe.count
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
+        let cell = tableView.dequeueReusableCell(withIdentifier: "HomeCell", for: indexPath) as! HomeViewCell
+        cell.name.text = dataCoffe[indexPath.row].nameCoffe;
+        cell.price.text = String(dataCoffe[indexPath.row].priceCoffe);
+        cell.img.image = UIImage(named:dataCoffe[indexPath.row].imgCoffe);
 
         return cell
     }
-    */
-
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        coffe = dataCoffe[indexPath.row];
+        self.performSegue(withIdentifier: "Detail", sender: self);
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let det = segue.destination as! CheckOutController
+        det.coffe = coffe;
+    }
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -96,7 +102,11 @@ class HomeControllerTableViewController: UITableViewController {
     
     
     func loadData() {
+        dataCoffe = [Coffe(nameCoffe: "Kopi Premium Arabica Temanggung [100g]", imgCoffe: "", priceCoffe: 22500, kindCoffe: "Arabica", desCoffe: "kopi arabica. Dengan biji terbaik berkualitas tinggi. Dari lereng gunung area Temanggung, ketinggian 750 mdpl"), Coffe(nameCoffe: "Kopi Premium Arabica Temanggung [100g]", imgCoffe: "", priceCoffe: 22500, kindCoffe: "Arabica", desCoffe: "kopi arabica. Dengan biji terbaik berkualitas tinggi. Dari lereng gunung area Temanggung, ketinggian 750 mdpl"), Coffe(nameCoffe: "Kopi Premium Arabica Temanggung [100g]", imgCoffe: "", priceCoffe: 22500, kindCoffe: "Arabica", desCoffe: "kopi arabica. Dengan biji terbaik berkualitas tinggi. Dari lereng gunung area Temanggung, ketinggian 750 mdpl")]
+    }
+    
+    @IBAction func prepareForUnwind(segue: UIStoryboardSegue) {
         
     }
-
+    
 }
