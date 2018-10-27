@@ -23,5 +23,6 @@ extension Product {
     @NSManaged public var status: Bool
     @NSManaged public var id: String?
     @NSManaged public var idUser: String?
+    @NSManaged public var price:Double
 
 }

@@ -105,6 +105,13 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		476EAC6D2184D06B00318891 /* CheckOut */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CheckOut;
+			sourceTree = "<group>";
+		};
 		47D1CCD4217F9B39007EDD5A = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +135,7 @@
 		47D1CCDF217F9B39007EDD5A /* CoffeA.A */ = {
 			isa = PBXGroup;
 			children = (
+				476EAC6D2184D06B00318891 /* CheckOut */,
 				47300BD72180CF7400EB49F0 /* Product+CoreDataClass.swift */,
 				47300BD82180CF7400EB49F0 /* Product+CoreDataProperties.swift */,
 				47300BCD2180C58E00EB49F0 /* Users+CoreDataClass.swift */,

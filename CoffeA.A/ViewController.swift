@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
     var users = [Users]();
-    var id = "";
+    var id: String!;
     
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
@@ -52,6 +52,7 @@ class ViewController: UIViewController {
         for data in users {
             if email.text == data.email && password.text == data.password{
                 id = data.idUser!;
+                print(data.idUser)
                 return true
             }
         }
